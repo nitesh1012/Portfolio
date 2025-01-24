@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+//import myImg from "../../Assets/avatar.svg";
+import myImg from "../../Assets/mypic.jpg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
@@ -19,26 +20,25 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+            I’ve fallen head over heels for programming, and, well, I’d like to think I’ve picked up a trick or two along the way. 😏
               <br />
-              <br />I am fluent in classics like
+              <br />I have good experience with languages like
               <i>
-                <b className="purple"> C++, Javascript and Go. </b>
-              </i>
+                <b className="purple"> Java, Python, JavaScript and C++. </b>
+              </i> —basically, the Avengers of programming languages.
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
+              My interests? &nbsp;
               <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
+                <b className="purple">Building snazzy web technologies, creating cool products, </b> and diving into the mysterious realms of 
+                {" "}
                 <b className="purple">
-                  Blockchain.
+                Big Data.
                 </b>
               </i>
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
+              When I’m not geeking out over code, I’m passionately crafting
               with <b className="purple">Node.js</b> and
               <i>
                 <b className="purple">
@@ -48,15 +48,31 @@ function Home2() {
               </i>
               &nbsp; like
               <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
+                <b className="purple"> React.js and Vue.js .</b>
+              </i> Honestly, I love turning ideas into something tangible and shareable—it’s like magic but with code. 🪄💻
             </p>
           </Col>
-          <Col md={4} className="myAvtar">
+          {/* <Col md={4} className="myAvtar">
             <Tilt>
               <img src={myImg} className="img-fluid" alt="avatar" />
             </Tilt>
-          </Col>
+          </Col> */}
+              <Col md={4} className="myAvtar">
+                <Tilt>
+                  <img 
+                    src={myImg} 
+                    className="img-fluid" 
+                    alt="avatar" 
+                    style={{
+                      borderRadius: "50%", 
+                      width: "400px", 
+                      height: "400px", 
+                      objectFit: "cover"
+                    }} 
+                  />
+                </Tilt>
+            </Col>
+
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
@@ -67,7 +83,7 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/soumyajit4419"
+                  href="https://github.com/nitesh1012"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -77,7 +93,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/Soumyajit4419"
+                  href="https://x.com/Chintz0101"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -87,7 +103,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
+                  href="https://linkedin.com/in/nitesh1012"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -97,7 +113,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/soumyajit4419"
+                  href="https://www.instagram.com/call_me_chintz/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
